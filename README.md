@@ -2,19 +2,19 @@
 
 A Microsoft initiative to support Azure Machine Learning customer adoption through migration from Machine Learning Studio(classic).
 
-![Azure Machine Learning Adoption Framework](.\aml-adoption-framework\aml-adoption-framework-one-pager.png)
+![Azure Machine Learning Adoption Framework](./aml-adoption-framework/aml-adoption-framework-one-pager.png)
 
 Azure Machine Learning Adoption Framework provides a holistic plan and action guidance to adopt Azure Machine Learning. The content is orginzed in following files:
-- [aml-adoption-framework.docx](\aml-adoption-framework\aml-adoption-framework.docx): word document of the end to end adoption framework. Can be used as planning and action template.
-- [aml-adoption-framework.pptx](\aml-adoption-framework\aml-adoption-framework.pptx) PowerPoint deck that highlighs the key stages of the adoption.
+- [aml-adoption-framework.docx](./aml-adoption-framework/aml-adoption-framework.docx): word document of the end to end adoption framework. Can be used as planning and action template.
+- [aml-adoption-framework.pptx](./aml-adoption-framework/aml-adoption-framework.pptx) PowerPoint deck that highlighs the key stages of the adoption.
 - One-pager info graphix in
-    - [PNG format](\aml-adoption-framework\aml-adoption-framework-one-pager.png)
-    - [PPTX format](\aml-adoption-framework\aml-adoption-framework-one-pager.pptx)
-    - [PDF format](\aml-adoption-framework\aml-adoption-framework-one-pager.pdf)
+    - [PNG format](./aml-adoption-framework/aml-adoption-framework-one-pager.png)
+    - [PPTX format](./aml-adoption-framework/aml-adoption-framework-one-pager.pptx)
+    - [PDF format](./aml-adoption-framework/aml-adoption-framework-one-pager.pdf)
 
 
 
-The Self-Assessment Survey template is available [here](.\self-assessment-survey.xlsx). It lists the questions to consider before start adopt Azure Machine Learning. 
+The Self-Assessment Survey template is available [here](./self-assessment-survey.xlsx). It lists the questions to consider before start adopt Azure Machine Learning. 
 
 The automate_assessment folder contains Azure CLI extention to assess the Machine Learning Studio(classic) assets (worksapces, experiemnts, web service, dataset etc). It can generate a ML Studio(classic) inventory list of a given subscription. Start to use the CLI [here]().
 
