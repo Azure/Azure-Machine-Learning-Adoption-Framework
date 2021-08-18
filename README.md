@@ -16,7 +16,7 @@ Azure Machine Learning Adoption Framework provides a holistic plan and action gu
 
 The Self-Assessment Survey template is available [here](./self-assessment-survey.xlsx). It lists the questions to consider before start adopt Azure Machine Learning. 
 
-The automate_assessment folder contains Azure CLI extention to assess the Machine Learning Studio(classic) assets (worksapces, experiemnts, web service, dataset etc). It can generate a ML Studio(classic) inventory list of a given subscription. Start to use the CLI [here]().
+The automate_assessment folder contains Azure CLI extention to assess the Machine Learning Studio(classic) assets (worksapces, experiemnts, web service, dataset etc). It can generate a ML Studio(classic) inventory list of a given subscription. Start to use the CLI [here](./automated_assessment/README.md).
 
 
 
