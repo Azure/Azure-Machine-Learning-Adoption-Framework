@@ -1,6 +1,11 @@
 # Azure Machine Learning Adoption Framework Automated Assessment Tool
 
 This tool is an Azure CLI exention to automatically list Machine Learning Studio(classic) assets (worksapce, web services, datasets, experiments etc) of a given subscription. It helps to inventory ML Studio(classic) assets and locate assets owner. 
+>**NOTE**
+>
+> This tool only list the paid ML Studio(classic) assets. Free workspaces will not be listed. 
+
+
 
 ## Build the automated assessment tool
 
@@ -16,7 +21,7 @@ python setup.py bdist_wheel
 >
 >The examples below demonstrate the use of Azure CLI (including the ML Classic extension) in a PowerShell environment. For more details on AZ execution environments, check the [Choose the right command-line tool for Azure](https://docs.microsoft.com/en-us/cli/azure/choose-the-right-azure-command-line-tool) section in the documentation.
 
-1. Install the `az mlclassic` extension.
+1. **Install the `az mlclassic` extension**
 
     ```ps
     az extension add --source .\dist\mlclassic-1.0.0-py2.py3-none-any.whl
@@ -28,7 +33,9 @@ python setup.py bdist_wheel
     az extension remove --name mlclassic
     ```
 
-2. Login with an Azure AD account that has proper permissions to access the ML Classic workspaces, and set the subscription you want to analyze.
+2. **Login with an Azure AD account**  
+
+    Make sure your account has proper permissions to access the ML Classic workspaces, and set the subscription you want to analyze.
    
    ```ps
     az login
@@ -36,9 +43,12 @@ python setup.py bdist_wheel
     az account set --subscription "Your subscription here"
     ```
 
-3. Run the [automated assessment inventory](./automated-assessment-report.ps1) script. Make sure you set the path to the report file in the `$reportPath` variable.
+3. **Run the [automated-assessment-report](./automated-assessment-report.ps1) PowerShell script** 
+    
+    The script will execute the CLI commands in below sesction for all the worksapces under the subscription you set in step 2. Make sure you set the path in the `$reportPath` variable. The script will save the asset inventory report in the path you set. 
 
 ## Features of the automated assessment tool
+This section explains the functionality of each command in the tool. If you want to generate a report of ML Studio(classic) assets under a given subscrption, run the [automated assessment report](./automated-assessment-report.ps1) script. 
 
 1. List all ML Classic workspaces.
 

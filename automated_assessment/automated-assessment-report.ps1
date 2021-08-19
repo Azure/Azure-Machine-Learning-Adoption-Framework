@@ -5,7 +5,7 @@ if ((az extension list --query "[?name=='mlclassic']" | ConvertFrom-Json ).Count
 }
 
 Write-Output 'Adding latest version of the Azure ML Classic CLI extension...'
-az extension add --source .\automated_assessment\dist\mlclassic-1.0.0-py2.py3-none-any.whl --yes
+az extension add --source .\dist\mlclassic-1.0.0-py2.py3-none-any.whl --yes
 
 # define the path to save the report. replace with your own path
 $reportPath = "D:\Git\microsoft-ml\subscription-1.json"
