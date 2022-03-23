@@ -1,0 +1,19 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.schema.json
+name: r-deployment
+endpoint_name: r-mtcar-endpoint
+environment:
+  name: r-mtcar-environment
+  version: 1
+  image: docker.io/yourDockerHubId/reponame:tag
+  inference_config:
+    liveness_route:
+      port: 8000
+      path: /live
+    readiness_route:
+      port: 8000
+      path: /ready
+    scoring_route:
+      port: 8000
+      path: /score
+instance_type: Standard_DS2_v2
+instance_count: 1
